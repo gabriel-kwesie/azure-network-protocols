@@ -64,7 +64,7 @@ To verify that both VMs are in the correct Virtual Network, go to the virtual ma
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Copy-paste the IP address of the Windows VM from Azure> Open Remote Desktop > paste the IP > then log in with the created username and password
+Copy the public IP address of the Windows VM from Azure > Open Remote Desktop > paste the IP > then log in with the created username and password
 </p>
 <br />
 
