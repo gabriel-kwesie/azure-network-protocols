@@ -104,7 +104,7 @@ In Azure, find the Ubuntu/Linux VM’s private IP addresses by clicking the VM�
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Within the Windows VM, in PowerShell, type “ping (private IP) -t” (this will start a perpetual ping) > now in Azure, go to > Virtual machines > the Ubuntu/Linux VM > Networking > Network Settings > now under click under Network security group >  setting > inbound security rules > click add > source will be any, destination will be any, put an * in destination port ranges, Protocol will be ICMPv4, action will be deny, and priority will be 290 > add (this will start to time out requests within PowerShell) 
+Within the Windows VM, in PowerShell, type “ping (private IP) -t” (this will start a perpetual ping) > now in Azure, go to > Virtual machines > the Ubuntu/Linux VM > Networking > Network Settings > now under click under Network security group >  setting > inbound security rules > click add > source will be any, destination will be any, put an * in destination port ranges, Protocol will be ICMPv4, action will be deny, and priority will be 290 > name the rule (DenyAnyCustomAnyInbound) > add (this will start to time out requests within PowerShell and Wireshark in the VM) 
 </p>
 <br />
 
