@@ -29,7 +29,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/edea4458-27b6-4457-917e-6d7ab64baa0e" />
 </p>
 <p>
 Go to Azure, create a resource group, set the name, and region > Review and create
@@ -37,23 +37,23 @@ Go to Azure, create a resource group, set the name, and region > Review and crea
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/3aad7789-12ff-4982-8f29-8bf2bbbf84e3" />
 </p>
 <p>
-Create a Virtual machine, select the Create resource group > name virtual machine > select the region >  change the image to windows 10 Pro > choose an appropriate size (2 vcpus, 8 GiB for tutorial) > set username and password > check the box under licensing > go to the networking tab and click create a new virtual network and rename > review and create
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Once previous Virtual machine is created, create a new virtual machine > put in the same resource group and region > for the image select ubuntu server 22 or 24 > choose an appropriate size (2 vcpus, 8 GiB for tutorial) > set username and password > check the box under licensing > go to the networking tab and select the previously created virtual network (if it doesn’t appear refresh your page and repeat these steps) > once its been assigned to the virtual network review and create
+Create a Virtual machine, select the Create resource group > name virtual machine > select the region >  change the image to windows 11 Pro > choose an appropriate size (2 vcpus, 8 GiB for tutorial) > set username and password > check the box under licensing > go to the networking tab and click create a new virtual network and rename > review and create
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/1cfd618e-089a-44b0-95bc-763c1499192a" />
+</p>
+<p>
+Once previous Virtual machine is created, create a new virtual machine > name virtual machine > put in the same resource group and region > for the image select ubuntu server 22 or 24 > choose an appropriate size (2 vcpus, 8 GiB for tutorial) > set username and password > check the box under licensing > go to the networking tab and select the previously created virtual network (if it doesn’t appear refresh your page and repeat these steps) > once its been assigned to the virtual network review and create
+</p>
+<br />
+
+<p>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/b7350476-4703-44d2-85df-f97409ff340d" />
 </p>
 <p>
 To verify that both VMs are in the correct Virtual Network, go to the virtual machines tab within Azure> click the VM> next to Virtual network/subnet, it will show the create network for both machines
@@ -61,7 +61,7 @@ To verify that both VMs are in the correct Virtual Network, go to the virtual ma
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/a6cff554-afdd-4517-9c7e-11cc13a9e82c" />
 </p>
 <p>
 Copy the public IP address of the Windows VM from Azure > Open Remote Desktop > paste the IP > then log in with the created username and password
@@ -69,7 +69,7 @@ Copy the public IP address of the Windows VM from Azure > Open Remote Desktop > 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/e9a9e8b6-2aa2-4c73-b812-cd7a78b52bee" />
 </p>
 <p>
 If there is a login issue within Azure, go to virtual machines > select the virtual machine > scroll down to help > click reset password > set username or password if needed
@@ -77,7 +77,7 @@ If there is a login issue within Azure, go to virtual machines > select the virt
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/9e48f8be-0135-45db-96b6-f576f1cae6e3" />
 </p>
 <p>
 Within the Windows VM, open a web browser and search www.wireshark.org > download the Windows x64 installer > open the download, and an installation wizard will pop up> click next and finish the installation 
@@ -85,15 +85,15 @@ Within the Windows VM, open a web browser and search www.wireshark.org > downloa
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/3f4e7092-afd9-4105-83d3-ffea50ce7b0c" />
 </p>
 <p>
-Click the start icon > search Wireshark and launch the application > select Ethernet> click the shark fin icon in the top left > type icmp in the “Apply a display filter” bar (there should be no activity displayed)
+Click the start icon > search Wireshark and launch the application > select Ethernet> click the shark fin icon in the top left to start a packet capture (if the fin is grey, then it has already started) > type icmp in the “Apply a display filter” bar (there should be no activity displayed)
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/1d9102f4-903e-4fb8-8d69-3fc20ca74f50" />
 </p>
 <p>
 In Azure, find the Ubuntu/Linux VM’s private IP addresses by clicking the VM’s name > go back to the Windows VM in Remote Desktop and open PowerShell > type “ping (private IP of the Linux VM)” (Within Wireshark, you will see an update)
@@ -101,7 +101,7 @@ In Azure, find the Ubuntu/Linux VM’s private IP addresses by clicking the VM�
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/5c1c5987-47cd-48bc-bfdc-dcd8ce2fae82" />
 </p>
 <p>
 Within the Windows VM, in PowerShell, type “ping (private IP) -t” (this will start a perpetual ping) > now in Azure, go to > Virtual machines > the Ubuntu/Linux VM > Networking > Network Settings > now under click under Network security group >  setting > inbound security rules > click add > source will be any, destination will be any, put an * in destination port ranges, Protocol will be ICMPv4, action will be deny, and priority will be 290 > name the rule (DenyAnyCustomAnyInbound) > add (this will start to time out requests within PowerShell and Wireshark in the VM) 
