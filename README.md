@@ -109,7 +109,7 @@ Within the Windows VM, in PowerShell, type “ping (private IP) -t” (this will
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/4f2c7669-5008-4487-8edb-ce2c70ad8bb0" />
 </p>
 <p>
 Back in Azure, delete the rule previously created > go back to the Windows VM (It will start to show replies like before the rule was in place) > press control-c in PowerShell to stop the ping > click the stop icon to stop Wireshark
@@ -117,7 +117,7 @@ Back in Azure, delete the rule previously created > go back to the Windows VM (I
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/5824a236-3850-42e2-956b-367178e57245" />
 </p>
 <p>
 Within the Windows VM, close and reopen Wireshark > select Ethernet and press the shark fin icon to start a new packet capture (if not already started) > type ssh in the “Apply a display filter (there should be no traffic once applied)
@@ -125,7 +125,7 @@ Within the Windows VM, close and reopen Wireshark > select Ethernet and press th
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/f040c0d1-aa37-491e-a37d-89ecb57381f5" />
 </p>
 <p>
 Close and reopen PowerShell within the Windows VM > type ssh (username of the Linux VM)@(Private IP Address) and press enter > it will ask if you want to connect, type yes > now type in the password of the Linux VM (Text will not be shown but is being imputed) and press enter (Now you are connected to the Linux VM) > Observe the traffic in wireshark > to exit the SSH connection type exit and press enter
@@ -133,7 +133,7 @@ Close and reopen PowerShell within the Windows VM > type ssh (username of the Li
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/ca92e264-5d22-4fc1-9e7b-ff5a52cd6f84" />
 </p>
 <p>
 Within Wireshark, clear the filter and type in DHCP > Within Powershell, run ipconfig /renew (Releases current IP address and gives you a new one)
@@ -141,17 +141,17 @@ Within Wireshark, clear the filter and type in DHCP > Within Powershell, run ipc
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/7380e975-aeaf-4406-b5a2-47f84da64d28" />
 </p>
 <p>
-Within Wireshark, clear the filter and type dns > restart the capture (should have no traffic) > in PowerShell type nslookup (Example: disney.com) (giving us the website's IP address) (When searched, you won't be able to access the main domain site)
+Within Wireshark, clear the filter and type dns > restart the capture (should have no traffic) > in PowerShell type nslookup (Example: disney.com) (giving us the website's IP address) (When searched, you won't be able to access the usual site domain)
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/e2b0ada6-64ef-438d-8763-4b0db41f0adc" />
 </p>
 <p>
-Within Wireshark, clear the filter and type (tcp.port==3389) RDP (Remote Desktop Protocol) > (it will immediately start info spam due to it displaying remote desktop activity)
+Within Wireshark, clear the filter and type (tcp.port==3389) RDP (Remote Desktop Protocol) > (it will immediately start  spam due to it displaying remote desktop activity)
 </p>
 <br />
